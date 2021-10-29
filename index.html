@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./script.js"></script>
-  <title>Photo-Slide</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <header>
-    <div class="container">
+    <script defer src="./script.js"></script>
+    <title>Photo-Slide</title>
+  </head>
+
+  <body>
+    <header>
       <div class="nav">
-        <h2 <i class="fas fa-crow"></i> Photo-Slide</h2>
+        <h2>Photo Slide</h2>
         <div class="search-box">
-          <input type="text" id="input" placeholder="Search photos..."><i onclick="loadImg()" class="fas fa-search"></i>
+          <form>
+            <input
+              type="text"
+              id="input"
+              placeholder="Search photos..."
+              autofocus
+            />
+            <input type="submit" value="GO" />
+          </form>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="container">
-<div class ="grid">
+    </header>
 
-</div>
-  </div>
-</body>
-
+    <main id="main" class="flex-center">
+      <!-- <article style="background-image">
+        <h3>X</h3>
+        <p class="hidden"></p>
+      </article> -->
+    </main>
+    <footer class="flex-center">
+      <p>Copyright &copy; All Rights Reserved</p>
+      <p>2021 Photo Slide</p>
+    </footer>
+  </body>
 </html>
