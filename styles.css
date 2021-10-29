@@ -2,32 +2,81 @@
     padding: o;
     margin: 0;
 }
-
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: black;
+}
+.container {
+    display: grid;
+    height: 20vh;
+
     color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "search-box"
+    "form"
+    "main"
+    "footer"
 }
 
 .nav {
+    
+    justify-content: center;
+    background-color: rgb(57, 31, 85);
+    grid-area: search-box;
+    height: 35%;
+    padding: 20% 20% 5% 20%;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(57, 31, 85);
+ 
+    grid-area: search-box;
+}
+
+
+main{
     display: flex;
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
-    padding: 5% 0;
-    background-color: rgb(42, 42, 91);
+    height: 65vh;
+    background-color: coral;
+    grid-area: main;
+}
+footer {
+    background-color: rgb(53, 50, 45);
+    grid-area: footer;
 }
 
-.nav h2 {
-    font-size: 2rem;
+.search-box {
+    display: flex;
+    -ms-flex-direction: row;
     align-items: baseline;
-    color: #daa520;
 }
 
-.search-box input[type="text"] {
+
+article {
+    padding: 1rem;
+    color: white;
+    background-size: cover;
+    background-position: center;
+   
+  
+    text-shadow: 2px 3px 5px #000000;
+    width: 18.75rem;
+    height: 12.5rem;
+   }
+
+   .search-box input[type="text"] {
 
     position: relative;
-    width: 200%;
+    width: 1000%;
     height: 30%;
     margin-left: 5rem;
     font-size: 1rem;
@@ -36,8 +85,8 @@ body {
     font-size: inherit;
     color: #daa520;
     background: none;
-    border: 1px solid #daa520;
-    border-radius: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
     outline: none;
 
     -webkit-transition: all .30s ease-in-out;
@@ -50,7 +99,7 @@ body {
 .search-box input[type="submit"] {
 
     position: relative;
-    width: 50%;
+    width: 20%;
     height: 30%;
     margin-left: 1rem;
     font-size: 1rem;
@@ -58,68 +107,8 @@ body {
     font-family: 1rem;
     font-size: inherit;
     color: none;
-    background: #daa520;
-    border: 1px solid #daa520;
-    border-radius: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
     outline: none;
-}
-
-form {
-    display: flex;
-    flex-direction: center;
-}
-
-main {
-    display: flex;
-    flex-direction: center;
-    flex-wrap: wrap;
-
-    height: 70vh;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 50px 1fr 30px;
-    grid-gap: 5px;
-}
-
-article {
-
-    padding: 1rem;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    border-radius: 7px;
-    margin: .15rem;
-    text-shadow: 2px 3px 5px #000000;
-    width: 18.75rem;
-    height: 12.5rem;
-    /* rem stands for root element metric - by default it's equal to 16 */
-}
-
-article p {
-    color: white;
-    font-size: .1rem;
-}
-
-.background-image {
-    display: flex;
-
-    width: 380px;
-    height: 200px;
-    margin-top: 15px;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-wrap: wrap;
-
-    background-color: rgb(42, 42, 91);
-
 }
