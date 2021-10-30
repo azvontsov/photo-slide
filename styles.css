@@ -4,12 +4,12 @@
 }
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: black;
+    background-color: rgb(57, 31, 85);
 }
 .container {
     display: grid;
     height: 20vh;
-
+  
     color: white;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -27,9 +27,8 @@ body {
     grid-area: search-box;
     height: 35%;
     padding: 20% 20% 5% 20%;
-
-
 }
+
 
 form {
     display: flex;
@@ -45,7 +44,7 @@ main{
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
-    height: 65vh;
+    
     background-color: coral;
     grid-area: main;
 }
@@ -56,7 +55,7 @@ footer {
 
 .search-box {
     display: flex;
-    -ms-flex-direction: row;
+    flex-direction: row;
     align-items: baseline;
 }
 
@@ -66,27 +65,31 @@ article {
     color: white;
     background-size: cover;
     background-position: center;
-   
-  
     text-shadow: 2px 3px 5px #000000;
     width: 18.75rem;
     height: 12.5rem;
+
    }
+   article {
+    
+    overflow: scroll;
+}
+
 
    .search-box input[type="text"] {
 
     position: relative;
     width: 1000%;
-    height: 30%;
+    height: 2.4rem;
     margin-left: 5rem;
     font-size: 1rem;
     padding: .75rem;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 1.5rem;
     color: #daa520;
     background: none;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 7px 0 0 5px;
     outline: none;
 
     -webkit-transition: all .30s ease-in-out;
@@ -100,15 +103,32 @@ article {
 
     position: relative;
     width: 20%;
-    height: 30%;
-    margin-left: 1rem;
+    height: 4rem;
+  
     font-size: 1rem;
     padding: .75rem;
-    font-family: 1rem;
-    font-size: inherit;
+    font-family: inherit;
+    font-size: 2rem;
     color: none;
-    background: white;
+    background: coral;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 7px 7px 0;
     outline: none;
 }
+input[type="submit"]:hover {
+
+    position: relative;
+    width: 20%;
+    height: 4rem;
+  
+    font-size: 1rem;
+    padding: .75rem;
+    font-family: inherit;
+    font-size: 2rem;
+    color: none;
+    background: rgb(211, 95, 53);
+    border: none;
+    border-radius: 0 7px 7px 0;
+    outline: none;
+}
+
