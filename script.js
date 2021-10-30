@@ -13,16 +13,15 @@ let photoData;
 
 const $form = $('form');
 const $input = $('input');
-const $main = $('main');
+const $main = $('#main');
 
 const $article = $('main[class="flex-center"]');
 
 // Event Listeners
+
 $form.on('submit', handleSubmit);
-$input.on('click', 'submit', handleSubmit);
-
-$main.on('dblclick','article', render);
-
+// $input.on('click', 'submit', handleSubmit);
+$main.on('dblclick', 'article', grabImageUrl );
 
 // Functions
 
@@ -35,12 +34,10 @@ function handleSubmit(evt) {
             photoData = data;
             render();
             // console.log('data', data);
-        }, function (error) {});
-         
+        }, function (error) {});     
 }
 
 function render() {
-    console.log('this', $(this).css('background-image'));
     const resultHtml = photoData.results.map((result) => {
 
         return `
@@ -51,7 +48,10 @@ function render() {
     }).join('');
     $main.html(resultHtml);
 
-    console.log('dblclicked!', $main.get())
- 
+    // console.log('dblclicked!', $main.get())
 
+}
+
+function grabImageUrl() {
+  console.log('this', this, $(this), $(this).css('background-image') )
 }
