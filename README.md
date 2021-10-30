@@ -8,6 +8,7 @@ A simple web app for displaying images by searching with a keyword
 -CSS
 -JavaScript/jQuery
 -Unsplash API
+-Google Fonts
 
 ## Screenshots
 
@@ -15,6 +16,6 @@ A simple web app for displaying images by searching with a keyword
 
 ## Getting Started
 
-[Click here](#) to see the site live
+[Click here](https://git.generalassemb.ly/anton/photo-slide.git) to see the site live
 
 ## Future Enchancements
