@@ -2,52 +2,81 @@
     padding: o;
     margin: 0;
 }
+
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: rgb(57, 31, 85);
 }
+
+/* -------WHOLE CONTAINER--------- */
+
 .container {
+   
     display: grid;
     height: 20vh;
-  
     color: white;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "search-box"
-    "form"
-    "main"
-    "footer"
+    grid-template-areas:
+        "search-box"
+        "form"
+        "main"
+        "footer"
 }
 
+
+
+/* -------INPUT--------- */
+
 .nav {
-    
     justify-content: center;
     background-color: rgb(57, 31, 85);
     grid-area: search-box;
-    height: 35%;
     padding: 20% 20% 5% 20%;
+    align-items: center;
+    display: flex;
+
+}
+nav {
+    justify-content: center;
+    background-color: rgb(57, 31, 85);
+    grid-area: search-box;
+    padding: 20% 20% 5% 20%;
+  
+ 
 }
 
 
 form {
     display: flex;
-    flex-direction: row;
     background-color: rgb(57, 31, 85);
- 
     grid-area: search-box;
 }
 
+/* -------PHOTOS--------- */
 
-main{
+main {
     display: flex;
     justify-content: center;
-    align-items: baseline;
     flex-wrap: wrap;
-    
     background-color: coral;
     grid-area: main;
 }
+
+article {
+    padding: .5rem;
+   
+    color: white
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px #000000;
+    width: 20rem;
+    height: 15rem;
+    align-content: flex-end;
+    display: grid;
+ 
+}
+
 footer {
     background-color: rgb(53, 50, 45);
     grid-area: footer;
@@ -60,23 +89,8 @@ footer {
 }
 
 
-article {
-    padding: 1rem;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    text-shadow: 2px 3px 5px #000000;
-    width: 18.75rem;
-    height: 12.5rem;
 
-   }
-   article {
-    
-    overflow: scroll;
-}
-
-
-   .search-box input[type="text"] {
+.search-box input[type="text"] {
 
     position: relative;
     width: 1000%;
@@ -92,11 +106,6 @@ article {
     border-radius: 7px 0 0 5px;
     outline: none;
 
-    -webkit-transition: all .30s ease-in-out;
-    -moz-transition: all .30s ease-in-out;
-    -ms-transition: all .30s ease-in-out;
-    -o-transition: all .30s ease-in-out;
-    transition: all .30s ease-in-out;
 }
 
 .search-box input[type="submit"] {
@@ -104,7 +113,7 @@ article {
     position: relative;
     width: 20%;
     height: 4rem;
-  
+
     font-size: 1rem;
     padding: .75rem;
     font-family: inherit;
@@ -115,12 +124,13 @@ article {
     border-radius: 0 7px 7px 0;
     outline: none;
 }
+
 input[type="submit"]:hover {
 
     position: relative;
     width: 20%;
     height: 4rem;
-  
+
     font-size: 1rem;
     padding: .75rem;
     font-family: inherit;
@@ -131,4 +141,3 @@ input[type="submit"]:hover {
     border-radius: 0 7px 7px 0;
     outline: none;
 }
-

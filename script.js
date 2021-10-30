@@ -15,13 +15,13 @@ const $form = $('form');
 const $input = $('input');
 const $main = $('main');
 
-const $article = $('article');
+const $article = $('main[class="flex-center"]');
 
 // Event Listeners
 $form.on('submit', handleSubmit);
 $input.on('click', 'submit', handleSubmit);
 
-$article.on('dblclick', handleSubmit);
+$main.on('dblclick','article', render);
 
 
 // Functions
@@ -35,27 +35,23 @@ function handleSubmit(evt) {
             photoData = data;
             render();
             // console.log('data', data);
-$article()
-
-        }, function (error) {
-
-        });
-
+        }, function (error) {});
+         
 }
 
-            function render() {
-                const resultHtml = photoData.results.map((result) => {
-                  return `
-                  <article style="background-image: url(${result.urls.raw})">
-                  
+function render() {
+    console.log('this', $(this).css('background-image'));
+    const resultHtml = photoData.results.map((result) => {
+
+        return `
+                  <article style="background-image: url(${result.urls.regular})">
                 <h6>${result.alt_description}</h6>
-               
                 <h4>❤ ${result.likes}</h4>
                  </article>`
-                }).join('');
+    }).join('');
+    $main.html(resultHtml);
 
-                
+    console.log('dblclicked!', $main.get())
+ 
 
-                 $main.html(resultHtml);
-                }
-                
+}
