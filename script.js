@@ -44,21 +44,20 @@ function render() {
                   <article style="background-image: url(${result.urls.regular})">
                 <h6>${result.alt_description}</h6>
                 <h4>❤ ${result.likes}</h4>
+                <a href="${result.links.download}" download="picture.png" target="_blank">⬇ download</a>
                  </article>`
     }).join('');
     $main.html(resultHtml);
 
     // console.log('dblclicked!', $main.get())
 
-}
+} 
 
 function grabImageUrl() {
+
     // window.open.results.link.download, '_blank'
 
-    $(this).click(function(){
-        window.open('url', 'window name', 'window settings');
-        return false;
-      });
+   
 
   console.log('this', this,  $(this),  $(this).css('background-image') )
 }

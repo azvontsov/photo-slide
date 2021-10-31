@@ -66,7 +66,7 @@ main {
 article {
     padding: .5rem;
    
-    color: white
+    color: white;
     background-size: cover;
     background-position: center;
     text-shadow: 2px 2px 4px #000000;
@@ -76,6 +76,15 @@ article {
     display: grid;
  
 }
+
+article a {
+    color: white;
+    text-decoration: none;
+}
+   
+
+
+
 
 footer {
     background-color: rgb(53, 50, 45);
@@ -87,6 +96,8 @@ footer {
     flex-direction: row;
     align-items: baseline;
 }
+
+
 
 
 
