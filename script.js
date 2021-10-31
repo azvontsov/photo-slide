@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.unsplash.com/search/photos?per_page=22';
+const BASE_URL = 'https://api.unsplash.com/search/photos?per_page=24';
 const ACCESS_KEY = 'VoHccXXYCed_4Z4O3I8pqg5EY3BRyhnDgQNyebO06uU';
 const SECRET_KEY = 'JTYfOsrpI6MBDV42p-TcSXtt83_yFROgpi0kezvRel0';
 
@@ -53,5 +53,12 @@ function render() {
 }
 
 function grabImageUrl() {
-  console.log('this', this, $(this), $(this).css('background-image') )
+    // window.open.results.link.download, '_blank'
+
+    $(this).click(function(){
+        window.open('url', 'window name', 'window settings');
+        return false;
+      });
+
+  console.log('this', this,  $(this),  $(this).css('background-image') )
 }
