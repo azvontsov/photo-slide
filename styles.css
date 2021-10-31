@@ -8,64 +8,47 @@ body {
     background-color: rgb(57, 31, 85);
 }
 
-/* -------WHOLE CONTAINER--------- */
-
 .container {
-   
-    display: grid;
-    height: 20vh;
-    color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "search-box"
-        "form"
-        "main"
-        "footer"
+       display: grid;
+      justify-content: center;
+  
 }
-
 
 
 /* -------INPUT--------- */
 
 .nav {
-    justify-content: center;
-    background-color: rgb(57, 31, 85);
-    grid-area: search-box;
-    padding: 20% 20% 5% 20%;
-    align-items: center;
     display: flex;
-
-}
-nav {
-    justify-content: center;
     background-color: rgb(57, 31, 85);
-    grid-area: search-box;
-    padding: 20% 20% 5% 20%;
-  
- 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1.5rem;
+    position: fixed;
+    padding: 30px 60px;
+    right: 0px;
+    left: 0px;
 }
-
 
 form {
     display: flex;
-    background-color: rgb(57, 31, 85);
-    grid-area: search-box;
 }
+
 
 /* -------PHOTOS--------- */
 
 main {
+    background-color: coral;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: coral;
-    grid-area: main;
+    margin-top: 150px;
+    
 }
 
 article {
     padding: .5rem;
-   
     color: white;
     background-size: cover;
     background-position: center;
@@ -74,21 +57,20 @@ article {
     height: 15rem;
     align-content: flex-end;
     display: grid;
- 
 }
 
 article a {
     color: white;
     text-decoration: none;
 }
-   
+
 
 
 
 
 footer {
     background-color: rgb(53, 50, 45);
-    grid-area: footer;
+    color: white;
 }
 
 .search-box {
@@ -105,7 +87,7 @@ footer {
 
     position: relative;
     width: 1000%;
-    height: 2.4rem;
+    height: 2rem;
     margin-left: 5rem;
     font-size: 1rem;
     padding: .75rem;
@@ -123,10 +105,8 @@ footer {
 
     position: relative;
     width: 20%;
-    height: 4rem;
-
-    font-size: 1rem;
-    padding: .75rem;
+    height: 3.6rem;
+    font-size: .5rem;
     font-family: inherit;
     font-size: 2rem;
     color: none;
@@ -137,18 +117,38 @@ footer {
 }
 
 input[type="submit"]:hover {
-
     position: relative;
     width: 20%;
-    height: 4rem;
-
-    font-size: 1rem;
-    padding: .75rem;
+    height: 3.6rem;
+    font-size: .5rem;
     font-family: inherit;
     font-size: 2rem;
     color: none;
-    background: rgb(211, 95, 53);
+    background: rgb(165, 72, 38);
     border: none;
     border-radius: 0 7px 7px 0;
     outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .search-box input[type="text"] {
+        width: 500%;
+        height: 1rem;
+        margin-left: 5rem;
+        font-size: .5rem;
+        padding: .75rem;
+    }
+
+.search-box input[type="submit"] {
+    width: 20%;
+    height: 3.6rem;
+    font-size: .5rem;
+}
+
+input[type="submit"]:hover {
+    width: 20%;
+    height: 3.6rem;
+    font-size: .5rem;
+}
 }
