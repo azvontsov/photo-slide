@@ -19,3 +19,5 @@ A simple web app for displaying images by searching with a keyword
 [Click here](https://photo-slide.netlify.app/) to see the site live
 
 ## Future Enchancements
+
+Pagination will be added for the user in the future.
