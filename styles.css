@@ -168,11 +168,7 @@ input[type="submit"]:hover {
         display: flex;
         padding-right: 50px;
     }
-    main {
-       
-        margin-top: 150px;
     
-    }
 
     .nav {
         display: flex;
@@ -228,7 +224,7 @@ input[type="submit"]:hover {
 
     footer {
         height: 5vh; 
-       
+        position: fixed; 
         width: 100%; 
     }
 }
