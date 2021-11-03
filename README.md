@@ -20,4 +20,4 @@ A simple web app for displaying images by searching with a keyword
 
 ## Future Enchancements
 
-Pagination will be added for the user in the future.
+Pagination will be added for the user.
