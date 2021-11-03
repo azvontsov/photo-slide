@@ -227,6 +227,6 @@ input[type="submit"]:hover {
     }
 
     footer {
-        padding-top: 100px;
+        padding-top: 100px auto;
     }
 }
