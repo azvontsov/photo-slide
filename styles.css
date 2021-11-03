@@ -122,12 +122,32 @@ input[type="submit"]:hover {
     outline: none;
 }
 
+
 @media screen and (max-width: 1200px) {
     .container {
-        max-width: 970px;
-        margin: 0px auto;
-        padding: 0px 15px;
+        max-width: 1100px;
     }
+.nav h2 {
+    padding: 30px 0;
+}
+form {
+    display: flex;
+    padding-right: 50px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+.nav h2 {
+    padding: 30px 0;
+}
+form {
+    display: flex;
+    padding-right: 50px;
+}
 }
 
 
@@ -145,7 +165,7 @@ form {
 
     .nav {
         display: flex;
-        background-color: rgb(35, 171, 35);
+        background-color: rgb(57, 31, 85);
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
