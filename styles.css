@@ -228,7 +228,7 @@ input[type="submit"]:hover {
 
     footer {
         height: 15vh; 
-        position: fixed; 
+       
         width: 100%; 
     }
 }
