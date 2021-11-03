@@ -6,6 +6,7 @@
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: rgb(57, 31, 85);
+    
 }
 
 .container {
@@ -38,7 +39,8 @@ form {
 /* -------PHOTOS--------- */
 
 main {
-    background-color: coral;
+    background: linear-gradient(
+        45deg, rgb(67, 112, 167), rgb(37, 46, 34));
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
