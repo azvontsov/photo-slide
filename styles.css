@@ -131,16 +131,21 @@ input[type="submit"]:hover {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 428px) {
     .container {
         max-width: none;
     }
 .nav h2 {
     padding: 30px 0;
 }
+form {
+    display: flex;
+    padding-right: 50px;
+}
+
     .nav {
         display: flex;
-        background-color: rgb(57, 31, 85);
+        background-color: rgb(35, 171, 35);
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -154,7 +159,7 @@ input[type="submit"]:hover {
     .search-box input[type="text"] {
 
         position: relative;
-        width: 500%;
+        width: 300%;
         height: 1rem;
         margin-left: 2rem;
         font-size: .4rem;
@@ -187,7 +192,3 @@ input[type="submit"]:hover {
 }
 
 
-@media all and (orientation:landscape) {
-
-
-}
