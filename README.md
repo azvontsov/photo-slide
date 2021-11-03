@@ -16,6 +16,6 @@ A simple web app for displaying images by searching with a keyword
 
 ## Getting Started
 
-[Click here](https://git.generalassemb.ly/anton/photo-slide.git) to see the site live
+[Click here](https://photo-slide.netlify.app/) to see the site live
 
 ## Future Enchancements
