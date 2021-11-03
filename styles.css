@@ -168,6 +168,11 @@ input[type="submit"]:hover {
         display: flex;
         padding-right: 50px;
     }
+    main {
+       
+        margin-top: 50px;
+    
+    }
 
     .nav {
         display: flex;
