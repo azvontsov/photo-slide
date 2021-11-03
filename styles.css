@@ -67,8 +67,9 @@ article a {
 footer {
     background-color: rgb(53, 50, 45);
     color: white;
-
-    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+ 
 }
 
 .search-box {
@@ -210,6 +211,7 @@ input[type="submit"]:hover {
 }
 @media screen and (max-width: 585px) {
     footer {
-        padding: 30px;
+
+        padding: 10px;
          }
 }
