@@ -41,7 +41,7 @@ form {
 
 main {
     background: linear-gradient(
-        45deg, rgb(67, 112, 167), rgb(37, 46, 34));
+        110deg, rgb(67, 112, 167), rgb(37, 46, 34));
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -164,13 +164,13 @@ input[type="submit"]:hover {
     }
 
     .nav h2 {
-        padding: 30px 0;
+       
         position: sticky;
     }
 
     form {
         display: flex;
-        padding-top: 30px;
+       
         padding-right: 50px;
     }
     main {
