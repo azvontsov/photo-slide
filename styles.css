@@ -165,6 +165,7 @@ input[type="submit"]:hover {
 
     .nav h2 {
         padding: 30px 0;
+        position: sticky;
     }
 
     form {
