@@ -12,7 +12,7 @@ A simple web app for displaying images by searching with a keyword
 
 ## Screenshots
 
-![screenshot 1](https://imgur.com/5KALgow)
+![screenshot 1](https://imgur.com/5KALgow.jpg)
 
 ## Getting Started
 
